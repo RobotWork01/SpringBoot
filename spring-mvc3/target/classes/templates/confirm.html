@@ -1,0 +1,32 @@
+﻿<!--
+参考：
+ https://qiita.com/t-shin0hara/items/687085ec34ae78ca2260
+ Spring Boot + Spring MVC ～サンプルアプリ実装～
+
+ ＜Spring Bootとは？＞
+ Spring Frameworkに含まれるフレームワークの一つで、 Spring Frameworkの機能を使いやすくするため のフレームワーク。
+
+ -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!--
+Thymeleaf（タイムリーフ）・・・Spring Bootで標準的に使われるHTMLのテンプレートエンジンです。
+ ※Spring BootではJSPの使用は非推奨となっています。
+
+■読み方（一般的）
+英語のまま「ダブリューダブリューダブリュー・タイムリーフ・ドット・オーアージー」と読む
+ドメイン名である「thymeleaf.org」の部分は、Thymeleaf（タイムリーフ）というJavaテンプレートエンジンの名前であり、
+Webサイトの正式名称です。﻿
+-->
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <span th:inline="text">
+    氏名： [[${user.name}]]<br>
+  E-Mail： [[${user.email}]]<br>
+   年齢： [[${user.age}]]<br>
+  </span>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+参考：
+ https://qiita.com/t-shin0hara/items/687085ec34ae78ca2260
+ Spring Boot + Spring MVC ～サンプルアプリ実装～
+
+ ＜Spring Bootとは？＞
+ Spring Frameworkに含まれるフレームワークの一つで、 Spring Frameworkの機能を使いやすくするため のフレームワーク。
+
+ -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<!--
+		読み方は「オー・アール・ジー・ドット・スプリング・ブート」です。
+		この表記はJavaのパッケージ名であり、通常「スプリングブート」と読みます。﻿
+		 -->
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>4.0.0-SNAPSHOT</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+	<groupId>com.example</groupId>
+	<artifactId>spring-mvc3</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>spring-mvc3</name>
+	<description>Demo project for Spring Boot</description>
+	<url/>
+	<licenses>
+		<license/>
+	</licenses>
+	<developers>
+		<developer/>
+	</developers>
+	<scm>
+		<connection/>
+		<developerConnection/>
+		<tag/>
+		<url/>
+	</scm>
+	<properties>
+		<java.version>24</java.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<!--
+			読み方は「オー・アール・ジー・ドット・スプリング・ブート」です。
+			この表記はJavaのパッケージ名であり、通常「スプリングブート」と読みます。﻿
+			 -->
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+			<!-- 「スプリング・ブート・スターター・タイムリーフ」 -->
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<!-- 「スプリング・ブート・スターター・ウェブ」 -->
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<!-- 「スプリング・ブート・スターター・デブツール」 -->
+			<scope>runtime</scope>
+			<optional>true</optional>
+
+		</dependency>
+		<dependency>
+		    <!--
+			Javaライブラリである Lombok（ロンボック） のパッケージ名であり、「ロンボック」と読みます。
+			このライブラリは、Javaコードのボイラープレートコード（定型的なコード）を削減し、
+			開発効率を向上させるために使われます。
+﻿		    -->
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.40</version>
+			<scope>provided</scope>
+			<!-->optional>true</optional-->
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<!-- Spring Boot の ビルド用 Maven プラグイン【追加】 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<!--
+				「org.apache.maven.plugins」（読み方「オーグ・アパッチ・メイヴン・プラグインズ」）
+				Javaプロジェクト管理ツールである Apache Maven のプラグインを格納するグループIDです。
+				-->
+				<artifactId>maven-compiler-plugin</artifactId>
+				<!--
+				 「maven-compiler-plugin」（読み方「メイヴン・コンパイラー・プラグイン」
+				 -->
+				<configuration>
+					<annotationProcessorPaths>
+					<!--
+					「annotationProcessorPaths」(読み方「アノテーションプロセッサーパス」)
+					Javaにおける「アノテーション」というメタデータをコードに追加する機能に関連するプロパティ名です。﻿
+					-->
+						<path>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+							<!--
+							Javaライブラリである Lombok（読み方「ロンボック」）
+
+							アノテーションを付与するだけで、getterやsetter、toStringメソッドなどの
+							定型的なボイラー・プレート・コードとして定型的なコードをコンパイル時に自動生成し、
+							Javaのコード記述を簡略化することで、開発の効率向上とコードの可読性・保守性の改善に貢献します。
+
+							＜アノテーション＞
+							@Getter: 各フィールドのgetterメソッドを生成します。
+							@Setter: 各フィールドのsetterメソッドを生成します。
+							@ToString: クラスのフィールドを一覧表示するtoStringメソッドを生成します。
+							@EqualsAndHashCode: オブジェクトの等価比較を行うequalsメソッドとhashCodeメソッドを生成します。
+							@NoArgsConstructor: 引数なしのコンストラクタを生成します。
+							@AllArgsConstructor: すべてのフィールドを引数に取るコンストラクタを生成します。
+							@Builder: Builderパターンの自動生成を可能にします。
+							-->
+						</path>
+					</annotationProcessorPaths>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<!--
+				「org.springframework.boot」（読み方「オーグ・スプリングフレームワーク・ブート」）
+				JavaベースのWebアプリケーション開発を容易にするフレームワークであるSpring Bootの公式パッケージ名です。
+				Spring Frameworkを基盤とし、面倒な初期設定を省き、短期間でWebアプリやREST APIを開発できることが特徴です。﻿
+				-->
+				<configuration>
+					<excludes>
+						<exclude>
+							<groupId>org.projectlombok</groupId>
+							<!-- オーグ・プロジェクト・ロンボック -->
+							<artifactId>lombok</artifactId>
+						</exclude>
+					</excludes>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<repositories>
+		<repository>
+			<id>spring-snapshots</id>
+			<!--
+			読み方「スプリング・スナップショット」・・・「Spring技術で生成されたスナップショット（の一覧）」
+			Snapshots (スナップショット):特定の時点でのデータや状態を記録したもののことを指します。﻿
+			 -->
+			<name>Spring Snapshots</name>
+			<url>https://repo.spring.io/snapshot</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>spring-snapshots</id>
+			<name>Spring Snapshots</name>
+			<url>https://repo.spring.io/snapshot</url>
+			<!--
+			読み方「スプリング・スナップショット」
+			-->
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+		</pluginRepository>
+	</pluginRepositories>
+
+</project>
