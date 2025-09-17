@@ -17,12 +17,12 @@ IDE（Eclipse）を起動し、メニューバーから「ファイル」 > 「�
 ```
 <img width="1065" height="553" alt="image" src="https://github.com/user-attachments/assets/6c133161-5175-46a5-b6de-542a7f99b60c" />
 
-> 依存関係で以下にチェックを入れて[完了]ボタンを押下します。<br/>
+> ### 依存関係で以下にチェックを入れて[完了]ボタンを押下します。<br/>
 ▼開発ツール・Spring Boot DevTools  ・Lombok   ▼テンプレート・エンジン・Thymeleaf   ▼Web ・Spring Web<br/>
 <img width="1053" height="541" alt="image" src="https://github.com/user-attachments/assets/0b975b60-fac2-4a2e-a550-10efc15b56e4" />
 
 <img width="807" height="356" alt="image" src="https://github.com/user-attachments/assets/6340ee7e-05df-40ea-a5bd-d2a553223b24" />
-> ●Spring Bootプログラムを実行すると、コンパイルエラーが表示されてしまい、プログラム実行失敗しました。
+> ### ●Spring Bootプログラムを実行すると、コンパイルエラーが表示されてしまい、プログラム実行失敗しました。
 ```
 Exception in thread "main" java.lang.UnsupportedClassVersionError: org/springframework/boot/SpringApplication has been compiled by a more recent version of the Java Runtime (class file version 61.0), this version of the Java Runtime only recognizes class file versions up to 59.0
 	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
@@ -37,8 +37,9 @@ Exception in thread "main" java.lang.UnsupportedClassVersionError: org/springfra
 	at com.example.demo.SpringMvc2Application.main(SpringMvc2Application.java:10)
 ```
 
-●どうすれば解決するのか、インターネット検索して調査しました。<br/>
+> ###●どうすれば解決するのか、インターネット検索して調査しました。<br/>
 参考：https://stackoverflow.com/questions/47457105/class-has-been-compiled-by-a-more-recent-version-of-the-java-environment
+
 ```
 While running a script, I am getting the following error message in the Eclipse console:
 Class has been compiled by a more recent version of the Java Environment (class file version 53.0), this version of the Java Runtime only recognizes class file versions up to 52.0.
@@ -62,7 +63,7 @@ This is just a version mismatch. You have compiled your code using Java version 
 65 = Java 21
 ```
 
-> ●java 17をダウンロード（インストール）しました。
+> ### ●java 17をダウンロード（インストール）しました。
 https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html<br/>
 jdk-17.0.12_windows-x64_bin.msi<br/>
 <img width="361" height="275" alt="image" src="https://github.com/user-attachments/assets/a8fe09a6-98a4-4be2-9c1f-db0bcf0b7d0c" />
@@ -70,23 +71,22 @@ jdk-17.0.12_windows-x64_bin.msi<br/>
 配布する場合には、Jarファイルを作成します。
 cd C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\spring-mvc3\target\classes\
 ```
-> Jarファイル作成（圧縮ファイルを作成）
+> ### Jarファイル作成（圧縮ファイルを作成）
 <img width="824" height="403" alt="image" src="https://github.com/user-attachments/assets/291fc6fe-dcba-4090-a988-61595574dd03" />
 
-> ＜開発時のJAVA実行方法＞ javawコマンドでJAVA実行する。
+> ### ＜開発時のJAVA実行方法＞ javawコマンドでJAVA実行する。
 C:\pleiades\2025-06\java\17\bin\javaw -Dfile.encoding=UTF-8  com.example.demo.SpringMvc3Application
 
-> 配布する場合には、Jarファイルを作成します。
+> ### 配布する場合には、Jarファイルを作成します。
 cd C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\spring-mvc3\target\classes\
 
-> Jarファイル作成（圧縮ファイルを作成）
+> ### Jarファイル作成（圧縮ファイルを作成）
 C:\pleiades\2025-06\java\17\bin\jar cvfm spring-mvc3.jar META-INF\MANIFEST.MF com\example\demo\*.class
 ```
 マニフェストが追加されました
 com/example/demo/SpringMvc3Application.classを追加中です(入=751)(出=425)(43%収縮されました)
 ```
-
-C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\spring-mvc3\target\classes>dir *.jar
+> ### C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\spring-mvc3\target\classes>dir *.jar
 ```
 ドライブ C のボリューム ラベルは Windows です
  ボリューム シリアル番号は B825-1DF9 です
@@ -96,13 +96,13 @@ C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\spring-mvc3\target\cla
                0 個のディレクトリ   6,265,737,216 バイトの空き領域
 ```
 
-> Jarファイルを実行すると、エラーが表示され、失敗しました。
+> ### Jarファイルを実行すると、エラーが表示され、失敗しました。
 C:\pleiades\2025-06\java\17\bin\java -jar spring-mvc3.jar
 ```
 spring-mvc3.jarにメイン・マニフェスト属性がありません
 ```
 
-> Jarファイルを解凍してみます。
+> ### Jarファイルを解凍してみます。
 C:\pleiades\2025-06\java\17\bin\jar xvf spring-mvc3.jar
 ```
   META-INF/が作成されました
