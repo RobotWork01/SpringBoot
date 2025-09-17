@@ -157,7 +157,8 @@ C:.
 ```
 
 > マニュフェストファイルにメインクラスを追加します。
-C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\spring-mvc3\target\classes>type META-INF\MANIFEST.MF
+
+type META-INF\MANIFEST.MF
 
 ```
 Manifest-Version: 1.0
@@ -168,7 +169,7 @@ Created-By: Maven Integration for Eclipse
 Main-Class: com.example.demo.SpringMvc3Application
 ```
 
-> もう一度、Jarファイル作成（圧縮ファイルを再作成）
+> ### もう一度、Jarファイル作成（圧縮ファイルを再作成）
 
 C:\pleiades\2025-06\java\17\bin\jar cvfm spring-mvc3.jar META-INF\MANIFEST.MF com\example\demo\*.class
 
@@ -177,7 +178,7 @@ C:\pleiades\2025-06\java\17\bin\jar cvfm spring-mvc3.jar META-INF\MANIFEST.MF co
 com/example/demo/SpringMvc3Application.classを追加中です(入=751)(出=425)(43%収縮されました)
 ```
 
-> Jarファイルを実行すると、NoClassDefFoundErrorとなり、スプリングブート・プログラム実行に失敗する。
+> ### Jarファイルを実行すると、NoClassDefFoundErrorとなり、スプリングブート・プログラム実行に失敗する。
 
 "C:\pleiades\2025-06\java\17\bin\java" -jar "spring-mvc3.jar"
 
@@ -191,6 +192,6 @@ Caused by: java.lang.ClassNotFoundException: org.springframework.boot.SpringAppl
         ... 1 more
 ```
 
-EclipseでJavawコマンド実行<br>
+### EclipseでJavawコマンド実行<br>
 Jarファイルを作成しないまま、スプリングブート・プログラム実行すると成功するのに<br/>
 Jarファイルを作成してからプログラム実行すると失敗する（疑問が残りました・・・）
