@@ -22,6 +22,7 @@ IDE（Eclipse）を起動し、メニューバーから「ファイル」 > 「�
 <img width="1053" height="541" alt="image" src="https://github.com/user-attachments/assets/0b975b60-fac2-4a2e-a550-10efc15b56e4" />
 
 <img width="807" height="356" alt="image" src="https://github.com/user-attachments/assets/6340ee7e-05df-40ea-a5bd-d2a553223b24" />
+
 > ### ●Spring Bootプログラムを実行すると、コンパイルエラーが表示されてしまい、プログラム実行失敗しました。
 ```
 Exception in thread "main" java.lang.UnsupportedClassVersionError: org/springframework/boot/SpringApplication has been compiled by a more recent version of the Java Runtime (class file version 61.0), this version of the Java Runtime only recognizes class file versions up to 59.0
