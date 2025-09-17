@@ -41,7 +41,8 @@ Exception in thread "main" java.lang.UnsupportedClassVersionError: org/springfra
 ```
 
 > ### ●どうすれば解決するのか、インターネット検索して調査しました。<br/>
-参考：https://stackoverflow.com/questions/47457105/class-has-been-compiled-by-a-more-recent-version-of-the-java-environment
+参考：<br/>
+<a href="https://stackoverflow.com/questions/47457105/class-has-been-compiled-by-a-more-recent-version-of-the-java-environment">https://stackoverflow.com/questions/47457105/class-has-been-compiled-by-a-more-recent-version-of-the-java-environment</a><br/>
 
 ```
 While running a script, I am getting the following error message in the Eclipse console:
@@ -68,7 +69,10 @@ This is just a version mismatch. You have compiled your code using Java version 
 
 > ### ●java 17をダウンロード（インストール）しました。
 
+### ダウンロード場所<br/>
 https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html<br/>
+
+### ダウンロードするファイル<br/>
 jdk-17.0.12_windows-x64_bin.msi<br/>
 
 <img width="361" height="275" alt="image" src="https://github.com/user-attachments/assets/a8fe09a6-98a4-4be2-9c1f-db0bcf0b7d0c" />
@@ -77,6 +81,7 @@ jdk-17.0.12_windows-x64_bin.msi<br/>
 
 ```
 cd C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\spring-mvc3\target\classes\
+C:\pleiades\2025-06\java\17\bin\jar cvfm spring-mvc3.jar META-INF\MANIFEST.MF com\example\demo\*.class
 ```
 
 > ### Jarファイル作成（圧縮ファイルを作成）
