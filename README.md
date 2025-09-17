@@ -170,6 +170,7 @@ Caused by: java.lang.ClassNotFoundException: org.springframework.boot.SpringAppl
         ... 1 more
 ```
 
-> EclopseでJavawコマンド実行（Jarファイルを作成しないまま、スプリングブート・プログラム実行すると成功するのに）
+> EclopseでJavawコマンド実行
 
+Jarファイルを作成しないまま、スプリングブート・プログラム実行すると成功するのに
 Jarファイルを作成してからプログラム実行すると失敗する（疑問が残りました・・・）
