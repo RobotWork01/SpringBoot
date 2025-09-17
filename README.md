@@ -18,7 +18,9 @@ IDE（Eclipse）を起動し、メニューバーから「ファイル」 > 「�
 <img width="1065" height="553" alt="image" src="https://github.com/user-attachments/assets/6c133161-5175-46a5-b6de-542a7f99b60c" />
 
 > ### 依存関係で以下にチェックを入れて[完了]ボタンを押下します。<br/>
-▼開発ツール・Spring Boot DevTools  ・Lombok   ▼テンプレート・エンジン・Thymeleaf   ▼Web ・Spring Web<br/>
+▼開発ツール・Spring Boot DevTools  ・Lombok<br/>
+▼テンプレート・エンジン・Thymeleaf</br>
+▼Web ・Spring Web<br/>
 <img width="1053" height="541" alt="image" src="https://github.com/user-attachments/assets/0b975b60-fac2-4a2e-a550-10efc15b56e4" />
 
 <img width="807" height="356" alt="image" src="https://github.com/user-attachments/assets/6340ee7e-05df-40ea-a5bd-d2a553223b24" />
