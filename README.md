@@ -160,6 +160,7 @@ com/example/demo/SpringMvc3Application.classを追加中です(入=751)(出=425)
 > Jarファイルを実行すると、NoClassDefFoundErrorとなり、スプリングブート・プログラム実行に失敗する。
 
 "C:\pleiades\2025-06\java\17\bin\java" -jar "spring-mvc3.jar"
+
 ```
 Exception in thread "main" java.lang.NoClassDefFoundError: org/springframework/boot/SpringApplication
         at com.example.demo.SpringMvc3Application.main(SpringMvc3Application.java:18)
@@ -170,7 +171,6 @@ Caused by: java.lang.ClassNotFoundException: org.springframework.boot.SpringAppl
         ... 1 more
 ```
 
-> EclopseでJavawコマンド実行
-
-Jarファイルを作成しないまま、スプリングブート・プログラム実行すると成功するのに
+EclipseでJavawコマンド実行<br>
+Jarファイルを作成しないまま、スプリングブート・プログラム実行すると成功するのに<br/>
 Jarファイルを作成してからプログラム実行すると失敗する（疑問が残りました・・・）
