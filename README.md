@@ -8,7 +8,7 @@
 
 参考：<a href="https://qiita.com/t-shin0hara/items/687085ec34ae78ca2260">https://qiita.com/t-shin0hara/items/687085ec34ae78ca2260</a><br/>
 
-> Spring Boot + Spring MVC ～サンプルアプリ実装～
+> ### Spring Boot + Spring MVC ～サンプルアプリ実装～
 ■まず、Springスターター・プロジェクトがインストールされているのかどうかを確認する。
 ```
 IDE（Eclipse）を起動し、メニューバーから「ファイル」 > 「新規」 > 「その他」を選択すると、ウィンドウ「ウィザードを選択」画面が起動します。
@@ -37,7 +37,7 @@ Exception in thread "main" java.lang.UnsupportedClassVersionError: org/springfra
 	at com.example.demo.SpringMvc2Application.main(SpringMvc2Application.java:10)
 ```
 
-> ###●どうすれば解決するのか、インターネット検索して調査しました。<br/>
+> ### ●どうすれば解決するのか、インターネット検索して調査しました。<br/>
 参考：https://stackoverflow.com/questions/47457105/class-has-been-compiled-by-a-more-recent-version-of-the-java-environment
 
 ```
