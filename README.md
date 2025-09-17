@@ -72,8 +72,10 @@ https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html<br/
 jdk-17.0.12_windows-x64_bin.msi<br/>
 
 <img width="361" height="275" alt="image" src="https://github.com/user-attachments/assets/a8fe09a6-98a4-4be2-9c1f-db0bcf0b7d0c" />
+
+### 配布する場合には、Jarファイルを作成します。
+
 ```
-配布する場合には、Jarファイルを作成します。
 cd C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\spring-mvc3\target\classes\
 ```
 
