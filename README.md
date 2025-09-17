@@ -59,8 +59,10 @@ This is just a version mismatch. You have compiled your code using Java version 
 https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
 jdk-17.0.12_windows-x64_bin.msi
 <img width="361" height="275" alt="image" src="https://github.com/user-attachments/assets/a8fe09a6-98a4-4be2-9c1f-db0bcf0b7d0c" />
+```
 配布する場合には、Jarファイルを作成します。
 cd C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\spring-mvc3\target\classes\
+```
 Jarファイル作成（圧縮ファイルを作成）
 <img width="824" height="403" alt="image" src="https://github.com/user-attachments/assets/291fc6fe-dcba-4090-a988-61595574dd03" />
 
