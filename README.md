@@ -114,35 +114,18 @@ C:\pleiades\2025-06\java\17\bin\javaw -Dfile.encoding=UTF-8  com.example.demo.Sp
 
 
 
-### 配布する場合には、Jarファイルを作成します。
+### 配布する場合には、Jarファイルを作成します。（圧縮ファイルを作成）
 
 ```
 cd C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\spring-mvc3\target\classes\
 C:\pleiades\2025-06\java\17\bin\jar cvfm spring-mvc3.jar META-INF\MANIFEST.MF com\example\demo\*.class
-```
-
-
-
-> ### Jarファイル作成（圧縮ファイルを作成）
-
-<img width="824" height="403" alt="image" src="https://github.com/user-attachments/assets/291fc6fe-dcba-4090-a988-61595574dd03" />
-
-> ### ＜開発時のJAVA実行方法＞ javawコマンドでJAVA実行する。
-
-C:\pleiades\2025-06\java\17\bin\javaw -Dfile.encoding=UTF-8  com.example.demo.SpringMvc3Application
-
-> ### 配布する場合には、Jarファイルを作成します。
-
-### Jarファイル作成（圧縮ファイルを作成）
-
-```
-C:\pleiades\2025-06\java\17\bin\jar cvfm spring-mvc3.jar META-INF\MANIFEST.MF com\example\demo\*.class
 
 マニフェストが追加されました
 com/example/demo/SpringMvc3Application.classを追加中です(入=751)(出=425)(43%収縮されました)
+
 ```
 
-> ### C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\spring-mvc3\target\classes>dir *.jar
+> dir *.jar ・・・・作成したJarファイルを確認します
 
 ```
 ドライブ C のボリューム ラベルは Windows です
