@@ -72,8 +72,9 @@ This is just a version mismatch. You have compiled your code using Java version 
 ### ダウンロード場所<br/>
 <a href="https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html">https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html</a><br/>
 
-### ダウンロードするファイル ・・・・msiファイルはダブルクリックするとダウンロードしながらインストールします！<br/>
-jdk-17.0.12_windows-x64_bin.msi<br/>
+### ダウンロードするファイル 
+　※　zipファイルだと解凍する時にパスが長すぎて解凍に失敗することがあります。そんな場合には、msiファイルにすると、ダウンロードしながらインストールしてくれます。<br/>
+　jdk-17.0.12_windows-x64_bin.msi<br/>
 
 <img width="361" height="275" alt="image" src="https://github.com/user-attachments/assets/a8fe09a6-98a4-4be2-9c1f-db0bcf0b7d0c" />
 
