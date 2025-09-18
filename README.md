@@ -87,7 +87,7 @@ This is just a version mismatch. You have compiled your code using Java version 
 
 ### ●改めて、Spring Bootプログラムを実行すると、コンパイルエラー解決してプログラム実行成功しました！！
 
-●実行構成画面で「実行」ボタンをクリックすると、JAVA実行することができます。<br/>
+＜開発時のJAVA実行方法＞ Eclipseでの実行方法・・・実行構成画面で「実行」ボタンをクリックすると、JAVA実行することができます。<br/>
 
 <img width="1088" height="276" alt="image" src="https://github.com/user-attachments/assets/93027020-6259-4c72-b863-2bfa0b9c2e71" />
 
