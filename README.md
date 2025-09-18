@@ -77,6 +77,20 @@ jdk-17.0.12_windows-x64_bin.msi<br/>
 
 <img width="361" height="275" alt="image" src="https://github.com/user-attachments/assets/a8fe09a6-98a4-4be2-9c1f-db0bcf0b7d0c" />
 
+### JREシステム・ライブラリーに影響している
+<img width="1084" height="339" alt="image" src="https://github.com/user-attachments/assets/06bd4301-4c26-4358-9549-e383cf24dec9" />
+
+### ●改めて、Spring Bootプログラムを実行すると、コンパイルエラー解決してプログラム実行成功しました！！
+<img width="1088" height="276" alt="image" src="https://github.com/user-attachments/assets/93027020-6259-4c72-b863-2bfa0b9c2e71" />
+
+###「http://localhost:8080/form」にアクセスします。
+<img width="1061" height="224" alt="image" src="https://github.com/user-attachments/assets/cf941f81-a4a1-4298-bc43-87835c8d9e63" />
+
+### ＜開発時のJAVA実行方法＞ javawコマンドでJAVA実行する。
+```
+C:\pleiades\2025-06\java\17\bin\javaw -Dfile.encoding=UTF-8  com.example.demo.SpringMvc3Application
+```
+
 ### 配布する場合には、Jarファイルを作成します。
 
 ```
