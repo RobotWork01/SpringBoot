@@ -91,6 +91,7 @@ This is just a version mismatch. You have compiled your code using Java version 
 
 <img width="1088" height="276" alt="image" src="https://github.com/user-attachments/assets/93027020-6259-4c72-b863-2bfa0b9c2e71" />
 
+ブラウザで実行してみましょう！
 ```
  http://localhost:8080/form　にアクセスします。
 ```
@@ -98,11 +99,20 @@ This is just a version mismatch. You have compiled your code using Java version 
 <img width="1061" height="224" alt="image" src="https://github.com/user-attachments/assets/cf941f81-a4a1-4298-bc43-87835c8d9e63" />
 
 
-### ＜開発時のJAVA実行方法＞ コマンドラインでの実行方法・・・javawコマンドでJAVA実行する。
+＜開発時のJAVA実行方法＞ コマンドラインでの実行方法・・・javawコマンドでJAVA実行する。<br/>
 
 ```
 C:\pleiades\2025-06\java\17\bin\javaw -Dfile.encoding=UTF-8  com.example.demo.SpringMvc3Application
 ```
+
+ブラウザで実行してみましょう！
+```
+ http://localhost:8080/form　にアクセスします。
+```
+
+<img width="1061" height="224" alt="image" src="https://github.com/user-attachments/assets/cf941f81-a4a1-4298-bc43-87835c8d9e63" />
+
+
 
 ### 配布する場合には、Jarファイルを作成します。
 
@@ -110,6 +120,8 @@ C:\pleiades\2025-06\java\17\bin\javaw -Dfile.encoding=UTF-8  com.example.demo.Sp
 cd C:\Users\XXXXX\OneDrive\ドキュメント\JAVA\workspace\spring-mvc3\target\classes\
 C:\pleiades\2025-06\java\17\bin\jar cvfm spring-mvc3.jar META-INF\MANIFEST.MF com\example\demo\*.class
 ```
+
+
 
 > ### Jarファイル作成（圧縮ファイルを作成）
 
