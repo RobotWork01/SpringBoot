@@ -1,7 +1,4 @@
 package com.example.demo;
-
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 /*
  *参考：
  *https://qiita.com/t-shin0hara/items/687085ec34ae78ca2260
@@ -10,6 +7,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *Spring Bootとは？
  *Spring Frameworkに含まれるフレームワークの一つで、 Spring Frameworkの機能を使いやすくするため のフレームワーク。
 */
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+/*
+ * アノテーション
+ * @SpringBootApplication（読み方「スプリングブートアプリケーション」）
+ * JavaのmainメソッドからSpringアプリケーションを起動しブートストラップするために使用されます。
+ *
+ */
 
 @SpringBootApplication
 public class SpringMvc3Application {
