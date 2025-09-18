@@ -6,7 +6,7 @@
 ＋＋＋＋＋＋＋＋＋＋＋＋＋＋＋＋＋＋＋＋＋＋＋＋＋＋＋＋＋＋＋＋＋＋＋＋＋＋
 ```
 
-参考：<a href="https://qiita.com/t-shin0hara/items/687085ec34ae78ca2260">https://qiita.com/t-shin0hara/items/687085ec34ae78ca2260</a><br/>
+参考：<a href="https://qiita.com/t-shin0hara/items/687085ec34ae78ca2260">https://qiita.com/t-shin0hara/items/687085ec34ae78ca2260</a>・・・ありがとうございました。<br/>
 
 > ### Spring Boot + Spring MVC ～サンプルアプリ実装～
 ■まず、Springスターター・プロジェクトがインストールされているのかどうかを確認する。
