@@ -78,8 +78,12 @@ This is just a version mismatch. You have compiled your code using Java version 
 
 <img width="361" height="275" alt="image" src="https://github.com/user-attachments/assets/a8fe09a6-98a4-4be2-9c1f-db0bcf0b7d0c" />
 
+### ●実行構成画面で、Jarファイルをインストールしたjava 17に変更します。
+<img width="968" height="738" alt="image" src="https://github.com/user-attachments/assets/5c94be52-8b02-44ea-9d52-2495303c6e0d" />
+
 ### JREシステム・ライブラリーに影響している
 <img width="1084" height="339" alt="image" src="https://github.com/user-attachments/assets/06bd4301-4c26-4358-9549-e383cf24dec9" />
+
 
 ### ●改めて、Spring Bootプログラムを実行すると、コンパイルエラー解決してプログラム実行成功しました！！
 
@@ -91,7 +95,8 @@ This is just a version mismatch. You have compiled your code using Java version 
 
 <img width="1061" height="224" alt="image" src="https://github.com/user-attachments/assets/cf941f81-a4a1-4298-bc43-87835c8d9e63" />
 
-### ＜開発時のJAVA実行方法＞ javawコマンドでJAVA実行する。
+
+### ＜開発時のJAVA実行方法＞ コマンドラインでの実行方法・・・javawコマンドでJAVA実行する。
 
 ```
 C:\pleiades\2025-06\java\17\bin\javaw -Dfile.encoding=UTF-8  com.example.demo.SpringMvc3Application
