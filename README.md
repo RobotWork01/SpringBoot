@@ -70,9 +70,9 @@ This is just a version mismatch. You have compiled your code using Java version 
 > ### ●java 17をダウンロード（インストール）しました。
 
 ### ダウンロード場所<br/>
-https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html<br/>
+<a href="https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html">https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html</a><br/>
 
-### ダウンロードするファイル<br/>
+### ダウンロードするファイル ・・・・msiファイルはダブルクリックするとダウンロードしながらインストールします！<br/>
 jdk-17.0.12_windows-x64_bin.msi<br/>
 
 <img width="361" height="275" alt="image" src="https://github.com/user-attachments/assets/a8fe09a6-98a4-4be2-9c1f-db0bcf0b7d0c" />
@@ -112,9 +112,10 @@ C:\pleiades\2025-06\java\17\bin\javaw -Dfile.encoding=UTF-8  com.example.demo.Sp
 > ### 配布する場合には、Jarファイルを作成します。
 
 ### Jarファイル作成（圧縮ファイルを作成）
-C:\pleiades\2025-06\java\17\bin\jar cvfm spring-mvc3.jar META-INF\MANIFEST.MF com\example\demo\*.class
 
 ```
+C:\pleiades\2025-06\java\17\bin\jar cvfm spring-mvc3.jar META-INF\MANIFEST.MF com\example\demo\*.class
+
 マニフェストが追加されました
 com/example/demo/SpringMvc3Application.classを追加中です(入=751)(出=425)(43%収縮されました)
 ```
@@ -133,6 +134,7 @@ com/example/demo/SpringMvc3Application.classを追加中です(入=751)(出=425)
 > ### Jarファイルを実行すると、エラーが表示され、失敗しました。
 
 C:\pleiades\2025-06\java\17\bin\java -jar spring-mvc3.jar
+
 ```
 spring-mvc3.jarにメイン・マニフェスト属性がありません
 ```
@@ -140,6 +142,7 @@ spring-mvc3.jarにメイン・マニフェスト属性がありません
 > ### Jarファイルを解凍してみます。
 
 C:\pleiades\2025-06\java\17\bin\jar xvf spring-mvc3.jar
+
 ```
   META-INF/が作成されました
  META-INF/MANIFEST.MFが展開されました
@@ -188,9 +191,9 @@ Main-Class: com.example.demo.SpringMvc3Application
 
 > ### もう一度、Jarファイル作成（圧縮ファイルを再作成）
 
+```
 C:\pleiades\2025-06\java\17\bin\jar cvfm spring-mvc3.jar META-INF\MANIFEST.MF com\example\demo\*.class
 
-```
 マニフェストが追加されました
 com/example/demo/SpringMvc3Application.classを追加中です(入=751)(出=425)(43%収縮されました)
 ```
