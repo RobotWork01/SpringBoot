@@ -10,8 +10,10 @@ package com.example.demo.model;
 
 import lombok.Data;		//ロンボック・・・定型コード記述の省力化に役立つJavaアノテーションライブラリ
 /*
- * アノテーション（読み方「アットマーク データ」）
+ * アノテーション
+ * @Data（読み方「アットマーク データ」）
  * Spring Boot における @Data アノテーションは、 Lombok プロジェクトが提供するものです。
+ *
  * これは、クラスに対して自動的に @Getter, @Setter, @RequiredArgsConstructor, @ToString, @EqualsAndHashCode などの
  * 複数のアノテーションを一度に適用する便利な機能です。
  * これにより、冗長なゲッター、セッター、コンストラクタなどのコードを記述する手間を省き、
