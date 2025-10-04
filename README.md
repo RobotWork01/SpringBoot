@@ -9,6 +9,13 @@
 参考：<a href="https://qiita.com/t-shin0hara/items/687085ec34ae78ca2260">https://qiita.com/t-shin0hara/items/687085ec34ae78ca2260</a>・・・ありがとうございました。<br/>
 
 > ### Spring Boot + Spring MVC ～サンプルアプリ実装～
+＜MVCモデル（読：エムブイシーモデル）とは＞<br/>
+```
+・モデル（Model）：表示や入力に関連しない処理
+・ビュー（View）：表示や入力に関する処理
+・コントローラ（Controller）：ビューとモデルの橋渡し役
+```
+
 ■まず、Springスターター・プロジェクトがインストールされているのかどうかを確認する。
 ```
 IDE（Eclipse）を起動し、メニューバーから「ファイル」 > 「新規」 > 「その他」を選択すると、ウィンドウ「ウィザードを選択」画面が起動します。
